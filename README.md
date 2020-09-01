@@ -72,6 +72,8 @@ The steps applied to prepare the tweets, were done using the ekphrasis library[1
 #### Canditate Models : 
 The models were evaluated using accuracy and F1 as the evaluation metrics. Ideally, n-fold cross validation would have been applied but due to the excessive training time, this proved to be unrealistic
 
+As word embeddings are necessary for LSTM models, GloVe was imported pre-trained for the word embeddings layer[12], reducing the training time of our models and increasing model accuracy. GloVe has previously been trained on millions of tweets, so it should provide a strong basis for word embeddings. Multiple approaches were considered, such as training embeddings based on our dataset, using a pre-trained embedding layer like GloVe[12], or training an embedding layer on a pre-existing Twitter dataset. We concluded that using GloVe was the best choice.
+
 Despite initial promising results, the first model trained (single layer LSTM) overfitted on the training set after the 15th epoch and the accuracy on validation data was not as high as we expected. As a result, we added a second LSTM layer with fewer nodes and increased the dropout rate to prevent the model from overfitting.
 
 Next, we constructed more complex architectures by training models with a bi-LSTM[13] layer and later with 2 bi-LSTM layers. Finally, we added an attention mechanism, similar to other LSTM models[11][15], on each of the trained models. In using the attention mechanism, we wanted to test our assumption that aggregating the results of every hidden state on the LSTM layer (based on their importance) would give us better results
