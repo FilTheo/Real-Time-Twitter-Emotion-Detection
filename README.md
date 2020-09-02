@@ -6,7 +6,7 @@
 
 This project has attempted to quantify public opinion about topics or events based on four discrete classes of emotions: happiness, anger, sadness, and fear. These classes, which are considered to be four of the most basic human emotions[3], were chosen based on prior research of Twitter data and how different emotions are represented and classified on social media[1]. 
 
-Several LSTM models were trained to effectively classify the different tweets. Later, a streaming pipeline obtained newly arrived tweets, pre-processed and classified them and stored into an ElasticSearch Index. Finaly, results are visualized on a Kibana's Dashboard where analysts could get informed if the public feels anger or fear about a trending topic and make decisions accordingly. Different visualizations could inform analysts about the changes in people emotions during times, or how people feel about a topic on different parts of the world. 
+Several LSTM models were trained to effectively classify the different tweets. Later, a streaming pipeline obtains newly arrived tweets, pre-processes and classifies them in order to store them into an ElasticSearch Index. Finaly, results are visualized on a Kibana's Dashboard where analysts could get informed if the public feels anger or fear about a trending topic and make decisions accordingly. Different visualizations could inform analysts about changes in people emotions during different times, or how people feel about a topic on different parts of the world. 
 
 
 ## Hashatags
