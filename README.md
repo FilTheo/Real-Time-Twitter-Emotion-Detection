@@ -12,4 +12,4 @@ The acquired information is loaded through elasticsearch into a Kibana's Dashboa
 
 An example of its usage is given below:
 
-![Χωρίς τίτλο7](https://user-images.githubusercontent.com/70523417/91851849-92b04180-ec68-11ea-99a5-b109833c6a27.png)
+![Χωρίς τίτλο6](https://user-images.githubusercontent.com/70523417/91851315-9db6a200-ec67-11ea-89a9-986d2611f544.png)
