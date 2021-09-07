@@ -1,7 +1,7 @@
 # Real Time Twitter Emotion Detection
 
 
-**This project was worked with Chris Norrie(b19chrno@his.student.se)**
+**This project is worked with Chris Norrie(b19chrno@his.student.se)**
 
 It presents a real-time emotion classification framework resulting in a dashboard providing important analytics regarding the public opinion (for specific topics)
 
